@@ -1,11 +1,19 @@
 <script>
+  import AppHeader from "@/components/AppHeader.vue";
   export default {
-
-  }
+      components: {
+        AppHeader,
+      },
+  };
 </script>
 
 <template>
-  <h1>Hello, vue.js!</h1>
+  <div id="app">
+    <AppHeader />
+    <div class="container mt-3">
+     <RouterView/>
+    </div>
+  </div>
 </template>
 
 <style>
@@ -14,10 +22,5 @@
     margin: auto;
     
   }
-  h1 {
-    color: red;
-    background-color: aqua;
-    border-radius: 10px;
-    border: 1px solid red;
-  }
+  
 </style>
